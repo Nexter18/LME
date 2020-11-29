@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Nosotros - Flawless Trip</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/Estilo.css" />
+    <meta charset="utf-8" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<header>
+    <div id="header-img">
+        <picture>
+            <source media="(max-width:650px)" srcset="../img/Header%203.png">
+            <source media="(max-width:465px)" srcset="../img/Header%201.png">
+            <img src="../img/Header%201.png" class="img-responsive">
+        </picture>
+    </div>
+</header>
+
+<body id="ini" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- Barra de Navegacion -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #02ba67">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#ini">Inicio</a></li>
+                    <li><a href="Ruta Fresca.html">Ruta Fresca</a></li>
+                    <li><a href="Ruta Sol y Playa.html">Ruta Sol y Playa</a></li>
+                    <li><a href="Ruta de las Flores.html">Ruta de las Flores</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!-- Contenido Principal -->
+
+    <div class="col-sm-2 sidenav"></div>
+
+    <div id="ini" class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-8">
+                <section>
+                 
+                    <h2>MISION</h2>
+                    <h3>Contribuir a la prosperidad de El Salvador y de su sector turístico, siendo su voz en el exterior y orientándose a la captación y satisfacción de un turismo de mayor valor. </h3>
+
+                    <h2>VISION</h2>
+                    <h3>Es convertirse en un referente internacional y un líder en marketing para el sector turístico de El Salvador, los colaboradores y los turistas. </h3>
+
+                       <h1> Somos el grupo 4</h1>
+
+
+
+                    <!--Table-->
+                <table class="table table-hover table-bordered table-striped">
+                    <!--Table head-->
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Primer Nombre</th>
+                            <th>Segundo Nombre</th>
+                            <th>Primer Apellido</th>
+                            <th>Segundo Apellido</th>
+                            <th>Carnet</th>
+                            <th>Ruta Favorita</th>
+                            <th>Pais a Visitar</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <!--Table head-->
+                    <!--Table body-->
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Salvador</td>
+                            <td>Stuardo</td>
+                            <td>Rodriguez</td>
+                            <td>@</td>
+                            <td>RR192694</td>
+                            <td>Ruta de las Flores</td>
+                            <td>Noruega</td>
+                            <td>33</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Edwin</td>
+                            <td>Ernesto</td>
+                            <td>Rodriguez</td>
+                            <td>Durán</td>
+                            <td>RD203110</td>
+                            <td>La de mi casa</td>
+                            <td>Holanda</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Jose</td>
+                            <td>Manuel</td>
+                            <td>Sandoval</td>
+                            <td>Menjivar</td>
+                            <td>SM140624</td>
+                            <td>Ruta Fresca</td>
+                            <td>Canada</td>
+                            <td>22</td>
+                        </tr>
+                    </tbody>
+                    <!--Table body-->
+                </table>
+                <!--Table-->
+
+                    <h3> Hemos enfocado nuestra página en Turismo, por lo que podrá observar las mejores rutas que
+                        pudimos haber encontrado en nuestro país, El Salvador.</h3>
+
+                </section>
+                <section>
+                    <p>
+                        El turismo es un fenómeno social, cultural y económico relacionado con el movimiento de las
+                        personas a lugares que se encuentran fuera de su lugar de residencia habitual por motivos
+                        personales o de negocios/profesionales. Estas personas se denominan visitantes y el turismo
+                        tiene que ver con sus actividades, de las cuales algunas implican un gasto turístico.
+                    </p>
+                    <div class="atractivo">
+                        <img src="../img/ElSalvador.png" alt="Nuestro Pais" class="img-responsive">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-sm-2 sidenav"></div>
+
+    <footer class="footer">
+        <p>@Flawless trip todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

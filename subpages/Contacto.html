@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Contacto - Flawless Trip</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/Estilo.css" />
+    <meta charset="utf-8" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<header>
+    <div id="header-img">
+        <picture>
+            <source media="(max-width:650px)" srcset="../img/Header%203.png">
+            <source media="(max-width:465px)" srcset="../img/Header%201.png">
+            <img src="../img/Header%201.png" class="img-responsive">
+        </picture>
+    </div>
+</header>
+
+<body id="ini" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- Barra de Navegacion -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #02ba67">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#ini">Inicio</a></li>
+                    <li><a href="Ruta Fresca.html">Ruta Fresca</a></li>
+                    <li><a href="Ruta Sol y Playa.html">Ruta Sol y Playa</a></li>
+                    <li><a href="Ruta de las Flores.html">Ruta de las Flores</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="col-sm-2 sidenav"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7752.193335701447!2d-89.20127117764433!3d13.71259473455361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633090334e09d7%3A0x50a33acc6bf2d88f!2sColonia%20Layco%2C%20San%20Salvador!5e0!3m2!1sen!2ssv!4v1602991633055!5m2!1sen!2ssv"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <p>Nuestras oficinas están ubicadas en la Colonia Layco. Puedes acceder fácilmente através de nuestro
+                    mapa interactivo!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-lg-12">
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/Flawless-Trip-105429624682736">
+                    <i class="fa fa-facebook-official" aria-hidden="true" style="font-size:120px"></i>
+                </a>
+                <a class="btn btn-dark btn-social mx-2"
+                    href="https://www.instagram.com/flawless_trip_agency/?r=nametag">
+                    <i class="fa fa-instagram" aria-hidden="true" style="font-size:120px;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Container (Seccion de Contacto) -->
+    <div class="container-fluid bg-grey">
+        <h2 class="text-center">Contacto</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Déjanos tu información y te responderemos en las prox. 24hrs</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> San Salvador, ES</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +503 54654613565</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> flawlesstrip@trip.com</p>
+            </div>
+            <div class="col-sm-7 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Nombre" type="text"
+                            pattern="[a-​zA-Z]+" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comentarios"
+                    rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button id="submitForm" class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-2 sidenav"></div>
+
+    <footer class="footer">
+        <p>@Flawless trip todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+
+        $(window).dialog(function () {
+            $("#dialog").dialog();
+        });
+    </script>
+
+    <script>
+        $("#submitForm").click(function () {
+            
+            alert("El formulario ha sido enviado.");
+        });
+    </script>
+
+</body>
+
+</html>
